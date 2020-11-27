@@ -1,6 +1,8 @@
 import { FastifyPluginAsync } from 'fastify'
 import fp from 'fastify-plugin'
 
+import { TypeABC } from 'tsapp';
+
 export interface PluginOptions {
   optionA: string
 }
@@ -8,6 +10,7 @@ export interface PluginOptions {
 // define plugin using promises
 const myPluginAsync: FastifyPluginAsync<PluginOptions> = async (fastify, options) => {
   const { optionA } = options
+  const { decoratorA: TypeABC } = fastify
   //...
 }
 

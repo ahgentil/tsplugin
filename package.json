@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/node": "^14.14.8",
     "fastify": "^3.8.0",
+    "tsapp": "github:ahgentil/tsapp#kabum",
     "typescript": "^4.0.5"
   }
 }
